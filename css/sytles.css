@@ -5,10 +5,20 @@
     --bg-color: hsl(0, 0%, 90%);
     --bg-card-color: hsl(0, 0%, 98%);
     --transition: color 0.1s, background-color 0.2s ease-in-out;
+    --border-radius: border-radius: .4em;
 }
 
 *{
     box-sizing: border-box;
+}
+
+a{
+    color:var(--primary-color);
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
 }
 
 body{
@@ -99,4 +109,14 @@ body.dark{
     text-align: center;
     color: var(--primary-color);
     
+}
+
+.main{
+    display:grid;
+}
+
+@media screen and (min-width:720px){
+    .main{
+        grid-template-columns: min-content 1fr;
+    }
 }
