@@ -20,6 +20,8 @@ toggleTheme.addEventListener("click", ( ) => {
     }
 });
 
+
+// Funcion para cambiar colores 
 toggleColors.addEventListener('click', (e)=>{
     rootStyles.setProperty('--primary-color', e.target.dataset.color);
 });
