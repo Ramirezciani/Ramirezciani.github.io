@@ -5,7 +5,7 @@
     --bg-color: hsl(0, 0%, 90%);
     --bg-card-color: hsl(0, 0%, 98%);
     --transition: color 0.2s, background-color 0.3s ease-in-out;
-    --border-radius: border-radius: .4em;
+    --border-radius:  0.4em;
 }
 
 *{
@@ -13,7 +13,7 @@
 }
 
 a{
-    color:var(--primary-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
 
@@ -112,11 +112,17 @@ body.dark{
 }
 
 .main{
-    display:grid;
+    display: grid;
 }
 
 @media screen and (min-width:720px){
     .main{
         grid-template-columns: min-content 1fr;
     }
+}
+
+.card{
+    padding: 1em;
+    background-color: var(--bg-card-color);
+    border-radius: var(--border-radius);
 }
