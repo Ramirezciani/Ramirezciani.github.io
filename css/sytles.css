@@ -126,9 +126,10 @@ body.dark{
 }
 
 .card{
-    padding: 1em;
+    padding: 10px;
     background-color: var(--bg-card-color);
     border-radius: var(--border-radius);
+    margin: 10px;
 }
 
 .card__image-container{
