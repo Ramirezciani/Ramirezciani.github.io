@@ -119,6 +119,17 @@ body.dark{
     padding: 2em;
 }
 
+.column{
+    display: grid;
+    gap: 0.5em;
+}
+@media screen and (min-width:720px){
+    .column--right{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, min-content);
+    }
+}
+
 @media screen and (min-width:720px){
     .main{
         grid-template-columns: min-content 1fr;
@@ -162,6 +173,25 @@ body.dark{
 
 }
 
+.skills{
+    padding: 1em 0;
+}
+
+.skills__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills__bar{
+    width: 250px;
+    height: 8px;
+    background-color: #888;
+    border-radius: var(--border-radius);
+}
+
+.skills__bar::after {
+}
 .icon{
     margin-right: 1em;
 }
