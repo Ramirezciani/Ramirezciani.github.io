@@ -1,0 +1,35 @@
+.body2 {
+    background: rgb(255,181,17);
+    background: linear-gradient(90deg, rgba(255,181,17,1) 50%, rgba(0,41,64,1) 50%);
+    
+  }
+
+
+.logo1{
+    float: right;
+    margin-top: 50px;
+    margin-right: 150px;
+    
+}
+
+.contenido{
+    margin: 70px;
+    text-align: justify;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+.gif{
+    width: 600px;
+    height: 200px ;
+}
+
+.gif2{
+    width: 400px;
+    height: 700px;
+}
+
+div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
