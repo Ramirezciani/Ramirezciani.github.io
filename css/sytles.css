@@ -195,3 +195,10 @@ body.dark{
 .icon{
     margin-right: 1em;
 }
+
+
+.body2 {
+    background: rgb(255,181,17);
+    background: linear-gradient(90deg, rgba(255,181,17,1) 50%, rgba(0,41,64,1) 50%);
+    
+  }
