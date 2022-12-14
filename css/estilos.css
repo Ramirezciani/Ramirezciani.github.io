@@ -111,7 +111,7 @@ header{
 /* PERSONAS */
 
 #personas{
-  padding: 50px 50px;
+  padding: 0px ;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -119,10 +119,12 @@ header{
 
 #personas img{
   border-radius:100% ;
+  width: 75%;
+
 }
 
 #personas div {
-  padding: 5px ;
+  padding: 30px 30px;
 
 }
 
@@ -152,14 +154,11 @@ header{
   background: #6CC091;
 }
 
-/* FOOTER */
-
 footer{
   background-color: #002940;
   text-align: center;
-  padding: 10px 0px;
+  padding: 10px 0x;
 }
-
 /* RESPONSIVE */
 
 @media(max-width: 768px){
@@ -203,4 +202,3 @@ footer{
   }
   
 }
-
