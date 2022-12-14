@@ -152,6 +152,14 @@ header{
   background: #6CC091;
 }
 
+/* FOOTER */
+
+footer{
+  background-color: #002940;
+  text-align: center;
+  padding: 10px 0px;
+}
+
 /* RESPONSIVE */
 
 @media(max-width: 768px){
@@ -195,3 +203,4 @@ header{
   }
   
 }
+
