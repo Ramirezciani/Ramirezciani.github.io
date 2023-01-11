@@ -340,3 +340,125 @@ html{
     0%{width: 0%;}
     100%{width: 50%;}
 }
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+
+@keyframes python{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .scrum{
+    width: 0%;
+    animation: 2s scrum forwards;
+}
+
+@keyframes scrum{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .sql{
+    width: 0%;
+    animation: 2s sql forwards;
+}
+
+@keyframes sql{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .frameworks{
+    width: 0%;
+    animation: 2s frameworks forwards;
+}
+
+@keyframes frameworks{
+    0%{width: 0%;}
+    100%{width: 50%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion  forwards;
+}
+
+@keyframes comunicacion{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
+
+.skills .skill .idioma{
+    width: 0%;
+    animation: 2s idioma  forwards;
+}
+
+@keyframes idioma{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo  forwards;
+}
+
+@keyframes trabajo{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad  forwards;
+}
+
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .proactividad{
+    width: 0%;
+    animation: 2s proactividad  forwards;
+}
+
+@keyframes proactividad{
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .responsabilidad{
+    width: 0%;
+    animation: 2s responsabilidad  forwards;
+}
+
+@keyframes responsabilidad{
+    0%{width: 0%;}
+    100%{width: 100%;}
+}
+
