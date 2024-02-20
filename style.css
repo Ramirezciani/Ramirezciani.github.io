@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.logo-text {
+    margin-left: 10px;
+}
+
+.logo-text h1 {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.logo-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* 
+QUIEN SOY */
+
+#who-am-i {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#who-am-i h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#who-am-i p {
+    font-size: 18px;
+    color: #666;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* fotos */
+
+.photos {
+    display: flex;
+    justify-content: center; /* Align images to the center */
+    margin-top: 20px;
+}
+
+.photos img {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 50%; /* Making the images circular */
+    margin: 0 10px; /* Adding spacing between images */
+}
+
