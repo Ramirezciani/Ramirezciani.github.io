@@ -4,6 +4,8 @@ body {
     padding: 0;
 }
 
+/* HEADER */
+
 header {
     background-color: #222;
     padding: 20px;
@@ -32,6 +34,32 @@ header {
     color: #ddd;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.logo-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #ddd;
+}
+
+nav {
+    margin-left: auto; /* Pushes the navigation to the right */
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -53,11 +81,10 @@ nav ul li a:hover {
     color: #fff;
 }
 
-/* 
-QUIEN SOY */
+/* QUIEN SOY */
 
 #who-am-i {
-    background-color: #f9f9f9;
+    background-color: lightgray;
     padding: 50px 0;
     text-align: center;
 }
@@ -76,7 +103,7 @@ QUIEN SOY */
     line-height: 1.6;
 }
 
-/* fotos */
+/* FOTOS */
 
 .photos {
     display: flex;
@@ -91,3 +118,53 @@ QUIEN SOY */
     margin: 0 10px; /* Adding spacing between images */
 }
 
+/* PORTFOLIO */
+
+#portfolio {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    margin: 10px;
+    position: relative;
+    width: 500px; /* Ancho del cuadro de la imagen */
+    height: 500px; /* Alto del cuadro de la imagen */
+}
+
+.project img {
+    width: 100%; /* Hacer que la imagen ocupe todo el cuadro */
+    height: 100%; /* Hacer que la imagen ocupe todo el cuadro */
+    border-radius: 10px; /* Agregar bordes redondeados */
+}
+
+.project .project-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Hacer que el hover tenga el mismo ancho que el cuadro de la imagen */
+    height: 100%; /* Hacer que el hover tenga el mismo alto que el cuadro de la imagen */
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px; /* Agregar bordes redondeados */
+    box-sizing: border-box;
+}
+
+.project:hover .project-description {
+    opacity: 1;
+}
