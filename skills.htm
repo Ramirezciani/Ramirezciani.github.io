@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+<style>
+/* Estilos para las barras de progreso */
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Evitar que el texto sobresalga */
+}
+
+.progress {
+    height: 100%;
+    background-color: blue;
+    text-align: center;
+    line-height: 20px; /* Alinea el texto verticalmente */
+    border-radius: 10px;
+    color: #fff;
+}
+</style>
+</head>
+<body>
+
+<section id="skills">
+    <div class="container">
+        <h2>Habilidades</h2>
+        
+        <div class="category">
+            <h3>Programación</h3>
+            <div class="skill">
+                <h4>Lenguajes de Programación</h4>
+                <div class="progress-bar">
+                    <div class="progress" data-width="50%">50%</div>
+                </div>
+            </div>
+            <!-- Agrega más habilidades de programación según sea necesario -->
+        </div>
+        
+        <div class="category">
+            <h3>Herramientas</h3>
+            <div class="skill">
+                <h4>Diseño Gráfico</h4>
+                <div class="progress-bar">
+                    <div class="progress" data-width="70%">70%</div>
+                </div>
+            </div>
+            <!-- Agrega más herramientas según sea necesario -->
+        </div>
+        
+        <div class="category">
+            <h3>Habilidades Blandas</h3>
+            <div class="skill">
+                <h4>Comunicación</h4>
+                <div class="progress-bar">
+                    <div class="progress" data-width="80%">80%</div>
+                </div>
+            </div>
+            <!-- Agrega más habilidades blandas según sea necesario -->
+        </div>
+        
+    </div>
+</section>
+
+<script>
+// Función para animar las barras de progreso
+function animateProgressBars() {
+    const progressBars = document.querySelectorAll('.progress');
+    progressBars.forEach(bar => {
+        const width = bar.getAttribute('data-width'); // Obtiene el ancho de la barra desde el atributo de datos
+        let currentWidth = parseInt(bar.style.width) || 0; // Obtiene el ancho actual de la barra
+        const targetWidth = parseInt(width); // Obtiene el ancho objetivo de la barra
+        const step = (targetWidth - currentWidth) / 100; // Calcula el paso de animación
+        const animationInterval = setInterval(() => {
+            currentWidth += step; // Actualiza el ancho actual
+            bar.style.width = currentWidth + '%'; // Actualiza el ancho de la barra
+            if (Math.abs(currentWidth - targetWidth) < Math.abs(step)) {
+                bar.style.width = targetWidth + '%'; // Ajusta el ancho final
+                clearInterval(animationInterval); // Detiene la animación
+            }
+        }, 15); // Intervalo de animación (milisegundos)
+    });
+}
+
+// Animar las barras de progreso al cargar la página
+document.addEventListener("DOMContentLoaded", animateProgressBars);
+
+// Animar las barras de progreso constantemente
+setInterval(animateProgressBars, 5000); // Actualizar cada 5 segundos (5000 milisegundos)
+</script>
+
+</body>
+</html>

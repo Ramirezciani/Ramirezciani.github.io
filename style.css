@@ -123,7 +123,7 @@ nav ul li a:hover {
 #portfolio {
     padding: 50px 0;
     text-align: center;
-    background-color:#59554e;
+    background-color: #541734;
 }
 
 #portfolio h2 {
@@ -197,4 +197,24 @@ nav ul li a:hover {
     font-size: 16px;
     color: #666;
     margin: 0;
+}
+
+/* BARRA DE PROGRESO */
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden; /* Evitar que el texto sobresalga */
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 20px; /* Alinea el texto verticalmente */
+    border-radius: 10px;
+    color: #fff;
 }
