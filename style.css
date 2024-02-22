@@ -84,7 +84,7 @@ nav ul li a:hover {
 /* QUIEN SOY */
 
 #who-am-i {
-    background-color: lightgray;
+    background-color: #a1c1be;
     padding: 50px 0;
     text-align: center;
 }
@@ -123,12 +123,13 @@ nav ul li a:hover {
 #portfolio {
     padding: 50px 0;
     text-align: center;
+    background-color:#59554e;
 }
 
 #portfolio h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #333;
+    color: white;
 }
 
 .projects {
@@ -140,8 +141,8 @@ nav ul li a:hover {
 .project {
     margin: 10px;
     position: relative;
-    width: 500px; /* Ancho del cuadro de la imagen */
-    height: 500px; /* Alto del cuadro de la imagen */
+    width: 250px; /* Ancho del cuadro de la imagen */
+    height: 250px; /* Alto del cuadro de la imagen */
 }
 
 .project img {
@@ -167,4 +168,33 @@ nav ul li a:hover {
 
 .project:hover .project-description {
     opacity: 1;
+}
+
+
+/* Estilos para la sección "Habilidades" */
+#skills {
+    padding: 50px 0;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skill {
+    margin-bottom: 30px;
+}
+
+.skill h3 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.skill p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
 }
