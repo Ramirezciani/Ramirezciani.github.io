@@ -90,7 +90,7 @@ nav ul li a:hover {
 /* QUIEN SOY */
 
 #who-am-i {
-    background-color: #e9e9e9;
+    background-color: #37b2af;
     padding: 50px 0;
     text-align: center;
 }
@@ -129,13 +129,13 @@ nav ul li a:hover {
 #portfolio {
     padding: 50px 0;
     text-align: center;
-    background-color: #006666;
+    background-color: #4cc5c2;
 }
 
 #portfolio h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: white;
+    color: black;
 }
 
 .projects {
@@ -182,7 +182,7 @@ nav ul li a:hover {
 #skills {
     padding: 50px 0;
     text-align: center;
-    background-color: #cccccc;
+    background-color: #62d9d5;
 }
 
 #skills h2 {
@@ -222,10 +222,11 @@ nav ul li a:hover {
 }
 
 /* PARTE ESTUDIOS */
-
 #education {
-    margin: 50px 0;
+    background-color:#77ece7;
+    padding: 50px 0;
     text-align: center;
+    margin-bottom: -50px; /* Ajustar el margen inferior */
 }
 
 #education h2 {
@@ -234,15 +235,24 @@ nav ul li a:hover {
     color: #333;
 }
 
+.studies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 30px;
+}
+
 .study {
-    margin-bottom: 30px;
-    text-align: left; /* Alinea el contenido a la izquierda */
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    margin: 20px;
 }
 
 .study h3 {
     font-size: 24px;
     color: #222;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .study p {
@@ -251,7 +261,178 @@ nav ul li a:hover {
     margin: 0;
 }
 
-#experience{
-    background-color: #2a2344;
+
+
+/* PARTE TRABAJOS */
+#experience {
+    background-color: #8cfffa;
+    color: black;
+    margin: 50px 0 -50px; 
+    text-align: center;
+    padding: 50px 0; 
+}
+
+#experience h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    justify-items: center; 
+}
+
+.job {
+    text-align: left;
+    background-color: #77ece7 ;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.job h3 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.job p {
+    color: black;
+    margin: 0;
+}
+
+/* CONTACTO */
+
+#contact {
+    background-color: #e9e9e9;
+    padding: 50px 0;
+    text-align: center;
+    margin-bottom: -50px; /* Ajustar el margen inferior */
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px; /* Espacio entre el formulario y el mapa */
+}
+
+.contact-form {
+    max-width: 400px; /* Ancho máximo del formulario */
+    width: 100%;
+}
+
+.contact-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
     color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.map-container {
+    max-width: 600px; /* Ancho máximo del mapa */
+    width: 100%;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px; /* Altura del mapa */
+    border: none;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 480px) {
+    /* Estilos para dispositivos con un ancho máximo de 480px */
+    .logo img {
+        max-height: 40px;
+    }
+    
+    .logo-text h1 {
+        font-size: 18px;
+    }
+    
+    .logo-text h2 {
+        font-size: 14px;
+    }
+    
+    .photos img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .project {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .project .project-description {
+        padding: 10px;
+    }
+    
+    .skill h3 {
+        font-size: 18px;
+    }
+    
+    .skill p {
+        font-size: 12px;
+    }
+    
+    .categories {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .map-container iframe {
+        height: 200px;
+    }
+
+    #contact {
+        margin-top: 50px; 
+    }
 }

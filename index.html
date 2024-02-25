@@ -29,7 +29,7 @@
     </header>
 
     <!-- PARTE QUIEN SOY  -->
-    <div>PAGINA EN PROCESO DE CONSTRUCCIÓN</div>
+    
 
     <section id="who-am-i">
         <div class="container">
@@ -125,42 +125,90 @@
     
 
 <!-- PARTE ESTUDIOS  -->
-    <section id="education">
-        <div class="container">
-            <h2 class="text-center">Educación</h2>
+<section id="education">
+    <div class="container">
+        <h2 class="text-center">Educación</h2>
+        <div class="studies-container">
             <div class="study">
                 <h3>Analista Programador Computacional</h3>
-                <p>Duoc Uc: 2021 - 2023</p>
+                <p>Duoc UC: 2021 - 2023</p>
             </div>
             <div class="study">
-                <h3>Ingeniería en Prevenención de riesgos </h3>
-                <p>Duoc Uc : 2012-2016</p>
+                <h3>Ingeniería en Prevención de Riesgos</h3>
+                <p>Duoc UC: 2012 - 2016</p>
             </div>
-            
         </div>
-    </section>
+    </div>
+</section>
+
 
 <!-- PARTE DE EXPERIENCIA LABORAL  -->
 
 <section id="experience">
     <div class="container">
         <h2 class="text-center">Experiencia Profesional</h2>
-        <div class="job">
-            <h3>Desarrollador </h3>
-            <p>Empresa ABC - Año de Inicio - Año de Finalización</p>
-            <p>Descripción breve de tus responsabilidades y logros en este puesto.</p>
+        <div class="jobs-grid">
+            <div class="job">
+                <h3>Desarrollador Web Senior</h3>
+                <p>Empresa ABC - Año de Inicio - Año de Finalización</p>
+                <p>Descripción breve de tus responsabilidades y logros en este puesto.</p>
+            </div>
+            <div class="job">
+                <h3>Analista de Sistemas</h3>
+                <p>Empresa XYZ - Año de Inicio - Año de Finalización</p>
+                <p>Detalles adicionales sobre tus responsabilidades y logros en este puesto.</p>
+            </div>
+            <div class="job">
+                <h3>Desarrollador de Software</h3>
+                <p>Empresa XYZ - Año de Inicio - Año de Finalización</p>
+                <p>Descripción breve de tus responsabilidades y logros en este puesto.</p>
+            </div>
+            <!-- Agrega más secciones de empleo según sea necesario -->
         </div>
-        <div class="job">
-            <h3>Soporte TI</h3>
-            <p></p>
-            <p></p>
-        </div>
-        <!-- Agrega más secciones de empleo según sea necesario -->
     </div>
 </section>
 
+<section id="contact">
+    <div class="container">
+        <h2 class="text-center">Contáctame</h2>
+        <div class="contact-content">
+            <div class="contact-form">
+                <h3>Envíame un Mensaje</h3>
+                <form action="procesar_formulario.php" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" name="correo" placeholder="Correo Electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Asunto">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe src="" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
     
     
-    
+    <script src="main.js"></script>
 </body>
 </html>
