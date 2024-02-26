@@ -107,6 +107,8 @@ nav ul li a:hover {
     margin: 0 auto;
     max-width: 600px;
     line-height: 1.6;
+    text-align: justify;
+    padding: 15px;
 }
 
 /* FOTOS */
@@ -142,12 +144,14 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 
 .project {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     position: relative;
+    padding: 15px;
 }
 
 .project .project-description {
@@ -155,17 +159,17 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100px;
-    height: auto;
+    width: 250px;
+    height: 250px;
     padding: 10px;
     font-size: 12px;
     line-height: 1.2;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border-radius: 5px;
     text-align: center;
-    opacity: 0; /* Inicialmente ocultar la descripción */
-    transition: opacity 0.3s; /* Agregar transición para suavizar el efecto */
+    opacity: 0; 
+    transition: opacity 1s; 
 }
 
 .project:hover .project-description {
@@ -296,6 +300,8 @@ nav ul li a:hover {
     width: 90%; 
     background-color: #77ece7;
     border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
 
 }
 
@@ -389,9 +395,10 @@ button[type="submit"]:hover {
 
 .map-container iframe {
     width: 100%;
-    height: 450px; /* Altura del mapa */
+    height: 450px; 
     border: none;
     border-radius: 5px;
+    padding: 10px;
 }
 
 
@@ -417,7 +424,6 @@ button[type="submit"]:hover {
     .project {
         width: 150px;
         height: 150px;
-        padding: 10px;
     }
     
     .project .project-description {
@@ -473,7 +479,8 @@ footer {
     left: 0; /* Alinea a la izquierda */
     width: 100%; /* Ancho completo */
     background-color: #333; /* Color de fondo */
-    padding: 20px 0; /* Añade espacio alrededor del contenido */
+    padding: 20px 0; 
+   
 }
 
 .social-icons {
