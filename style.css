@@ -103,7 +103,8 @@ nav ul li a:hover {
 
 #who-am-i p {
     font-size: 18px;
-    color: #666;
+    color: black;
+    font-weight:bold;
     margin: 0 auto;
     max-width: 600px;
     line-height: 1.6;
